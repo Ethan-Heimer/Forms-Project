@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee.Co</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/45ba6f1765.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id = "Header">
+        Coffee.Co
+    </header>
+
+    <nav id = "Nav">
+        <a href = "#">Home</a>
+        <a href = "#">About</a>
+        <a href = "#">Coffee</a>
+        <a href = "#">Merch</a>
+        <a href = "#">Recipies</a>
+        <a href = "#">Other</a>
+    </nav>
+
+    <div id ="wrapper">
+        <h1 id="PayHeader">Enter Your Information</h1>
+                  
+            <form id="Payment">
+                <div id ="Info">
+                    <div id="Personal" class="field">
+                        <legend>Personal Info</legend>
+
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstNme" name="First Name" placeholder="First Name" required>
+
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
+
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" id="dob" name="Date Of Birth" placeholder="Date Of Birth" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Email" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="Phone" placeholder="Phone Number" required>
+
+                        <legend>Address</legend>
+
+                        <label for="addr1">Address 1</label>
+                        <input type="text" id="addr1" name="Address 1" placeholder="Street Address" required>
+
+                        <label for="addr2">Address 2</label>
+                        <input type="text" id="addr2" name="Address 2" placeholder="Apartment/flat #">
+
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="City" placeholder="City name" required>
+
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="State" placeholder="State/Provence" required>
+                    </div>
+
+                    <div id="PayInfo" class="field">
+                        <legend>Payment Info</legend>
+
+                        <div id="Cards">
+                            <div>
+                                <label for="masterCard"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                <input type="radio" id="masterCard" name="cardType" required>
+                            </div>
+
+                            <div>
+                                <label for="americanCard"><i class="fa-brands fa-cc-amex"></i></label>
+                                <input type="radio" id="americanCard" name="cardType" required>
+                            </div>
+
+                            <div>
+                                <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                                <input type="radio" id="visa" name="cardType" required>
+                            </div>
+                        </div>
+
+                        <label for="num">Card Number</label>
+                        <input type="text" id="num" name="Card Number" placeholder="Card Number" required>       
+
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" name="Cvc" placeholder="Cvc" required>       
+
+                        <label for="expDate">Expiration Date</label>
+                        <input type="month" id="expDate" name="Expiration Date" required>   
+                        
+                        <legend>Extra Information</legend>
+
+                        <label for="extra">Extra Information</label>
+                        <textarea id="extra" name="ExtraBox" placeholder="Extra Information" style="resize: none; height: 200px; border: white; border-radius: 5px;"></textarea>
+                    </div>
+                </div>
+
+                <input type = "submit" id="submit" style="background-color: #8E443D; border: #8E443D; border-radius: 10px; font-size: xx-large; margin: 20px; height: 50px; color: white; width: 50%; justify-self: center;">
+            </form>
+    </div>
+
+    <footer>
+        <div id = "colOne"></div>
+
+
+        <div id = "footer">
+            Follow Us!
+
+            <div id = "Socials">
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+
+            <div id = rights>
+                All Rights &copy Reserved
+            </div>
+        </div>
+
+    </footer>
+
+    <!--#8B635C-->
+</body>
+</html>

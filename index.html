@@ -37,33 +37,33 @@
                         <legend>Personal Info</legend>
 
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstNme" name="First Name" placeholder="First Name" required>
+                        <input type="text" id="firstNme" name="First Name" placeholder="First Name" pattern="[a-zA-Z]*" required>
 
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
+                        <input type="text" id="lastName" name="Last Name" placeholder="Last Name" pattern="[a-zA-Z]*" required>
 
                         <label for="dob">Date Of Birth</label>
-                        <input type="date" id="dob" name="Date Of Birth" placeholder="Date Of Birth" required>
+                        <input type="date" id="dob" name="Date Of Birth" placeholder="Date Of Birth" pattern="^\d{8,8}$"required>
 
                         <label for="email">Email</label>
                         <input type="email" id="email" name="Email" placeholder="Email" required>
 
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="Phone" placeholder="Phone Number" required>
+                        <input type="tel" id="phone" name="Phone" placeholder="Phone Number" pattern="([0-9]{3}[-]?){2}[0-9]{4}" required>
 
                         <legend>Address</legend>
 
                         <label for="addr1">Address 1</label>
-                        <input type="text" id="addr1" name="Address 1" placeholder="Street Address" required>
+                        <input type="text" id="addr1" name="Address 1" placeholder="Street Address" pattern="^\d+\s(\w+\s){2}(\w+\s){0,3}?\w+$" required>
 
                         <label for="addr2">Address 2</label>
                         <input type="text" id="addr2" name="Address 2" placeholder="Apartment/flat #">
 
                         <label for="city">City</label>
-                        <input type="text" id="city" name="City" placeholder="City name" required>
+                        <input type="text" id="city" name="City" placeholder="City name" pattern="^[A-Z a-z]+$" required>
 
                         <label for="state">State</label>
-                        <input type="text" id="state" name="State" placeholder="State/Provence" required>
+                        <input type="text" id="state" name="State" placeholder="State/Provence" pattern="^[a-zA-Z/s]+$" required>
                     </div>
 
                     <div id="PayInfo" class="field">
@@ -87,10 +87,10 @@
                         </div>
 
                         <label for="num">Card Number</label>
-                        <input type="text" id="num" name="Card Number" placeholder="Card Number" required>       
+                        <input type="text" id="num" name="Card Number" placeholder="Card Number" pattern="^(\d{4}[- ]?){3}\d{4}$" required>       
 
                         <label for="cvc">CVC</label>
-                        <input type="text" id="cvc" name="Cvc" placeholder="Cvc" required>       
+                        <input type="text" id="cvc" name="Cvc" placeholder="Cvc" pattern="[0-9]{3}" required>       
 
                         <label for="expDate">Expiration Date</label>
                         <input type="month" id="expDate" name="Expiration Date" required>   

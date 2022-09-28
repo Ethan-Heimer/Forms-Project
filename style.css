@@ -75,7 +75,10 @@ legend{
     border: #8E443D solid 10px;
     border-radius: 10px;
 
+    width: 200px;
+
     font-size: xx-large;
+    text-align: center;
 
     margin: 20px;
 }
